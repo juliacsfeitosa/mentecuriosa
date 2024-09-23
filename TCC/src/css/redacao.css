@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300&family=Titillium+Web:wght@400;600&display=swap');
+
+/* Igual para todos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #191d57fd;
+    width: 100%;
+    padding: 15px;
+}
+
+.logo{
+    width: 25%; 
+    color:white;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+ 
+.sociais{
+     width: 25%;
+     color: white;
+}
+ 
+.menu{
+     width: 50%;
+     font-family: 'Titillium Web', sans-serif;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration:none;
+    padding-right: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, white, #b7fdff);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+    border-radius: 4px;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.header1{
+    background-color:transparent;
+}
+
+.tituloprincipal{
+    text-align: center;
+    font-family:  'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.oquee{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 35px;
+    background-color:#20415c;
+    border: 1px solid #20415c;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 100px;
+    margin-right: 1250px;
+    text-align: center;
+}
+
+.resumoredacao{
+    font-family:  'Poppins', sans-serif;
+    font-size: 20px;
+    color: black;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+.dicas{
+    font-family:  'Poppins', sans-serif;
+    font-size: 30px;
+    color: black;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+
+
+.titulomateria{
+    font-family:  'Poppins', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.header3{
+    background-color: #0040744e;
+}
+
+.tituloheader3{
+    font-family:  'Poppins', sans-serif;
+    font-size: 40px;
+    background-color: #20415c;
+    border: 1px solid #20415c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 610px;
+    margin-right: 610px;
+}
+
+.resumomateria{
+    font-family:  'Poppins', sans-serif;
+    font-size: 20px;
+    color:#20415c;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/*------------------------------------------------------------- TEMAS DE REDAÇÃO ---------------------------------------------------------------------------------*/
+
+.header2{
+    background-color: white;
+}
+
+.tituloTR{
+    font-family:  'Poppins', sans-serif;
+    font-size: 40px;
+    background-color: #20415c;
+    border: 1px solid #20415c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 610px;
+    margin-right: 610px;
+}
+
+.explicacaoTR{
+    font-family:  'Poppins', sans-serif;
+    font-size: 20px;
+    color:#20415c;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.intromateria{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    color: #20415c;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.materia{
+    text-align: center;
+}
+
+#contato{
+    background-color: rosybrown;
+}
+
+.footer{
+    box-shadow: rgba(1, 1, 1, 0.55) 1.95px 1.95px 5px; 
+    margin: 10px;
+    padding: 10px;    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}

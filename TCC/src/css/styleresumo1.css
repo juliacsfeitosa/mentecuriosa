@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #191d57fd;
+    width: 100%;
+    padding: 15px;
+}
+
+.titulo{
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.card-body{
+    color: black;
+}
+
+.titulocard{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    margin: 0px;
+
+}
+
+.card1{
+    border-radius: 7px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.textocard{
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao{
+    text-decoration: none;
+    border: 5px solid #191d57fd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #191d57fd;
+    color: white;
+    align-items: center;
+}
+
+.button1{
+    background-color: #2d3388fd;
+    height: 150px;
+    width: 150px;
+    margin-right: -85px;
+    margin-left: 165px;
+    color: #fffffffd;
+    border:transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    justify-content: center;
+    font-family:  'Poppins', sans-serif;
+    align-items: center;
+}
+
+.button2{
+    background-color: #2d3388fd;
+    height: 150px;
+    width: 150px;
+    margin-right: -80px;
+    margin-left: 165px;
+    color: #fffffffd;
+    border:transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    justify-content: center;
+    font-family:  'Poppins', sans-serif;
+    align-items: center;
+}
+
+.tituloensinomedio{
+    text-align: center;
+    font-family:  'Poppins', sans-serif;
+}
+
+.tituloensinof{
+    text-align: center;
+    font-family:  'Poppins', sans-serif;  
+}
+
+.ano{
+    font-size: 25px;
+    text-align: center;
+}
+
+.numero{
+    text-align: center;
+    font-size: 30px;
+}
+
+body{
+    background-image: url('fundosite.jpg');
+}
+
+
+.botaoem{
+    padding-left: 200px;
+}
+
+
+.botaoef{
+    padding-left: 70px;
+}
+
+@media screen and (max-width: 1110px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botaoef{
+        padding: 0px;
+        margin-left: -50px;
+    }
+
+    .botaoem {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botaoef{
+        padding: 0px;
+        margin-left: -75px;
+        margin-right: -25px;
+        
+    }
+
+    .botaoem {
+        padding: 0px;
+        margin-left: -50px;
+        margin-right: -30px;
+    }
+}

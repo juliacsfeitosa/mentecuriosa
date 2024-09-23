@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300&family=Titillium+Web:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #191d57fd;
+    width: 100%;
+    padding: 15px;
+}
+
+.logo{
+   width: 25%; 
+   color:white;
+   font-size: 20px;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+.sociais{
+    width: 25%;
+    color: white;
+}
+
+.menu{
+    width: 50%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration:none;
+    padding-right: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, white, #b7fdff);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+    border-radius: 4px;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+/* Estilização do texto do site ====================================================================================================*/
+
+.header1{
+    background-color:transparent;
+    border-left: 50px;
+}
+
+.tituloprincipal{
+    text-align: center;
+    font-family:  'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.oquee{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 35px;
+    background-color:#eeb909;
+    border: 1px solid #eeb909;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 100px;
+    margin-right: 1390px;
+    text-align: center;
+}
+
+.resumoenem{
+    font-family:  'Poppins', sans-serif;
+    font-size: 20px;
+    color: black;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+.imagemenem{
+    height: 300px;
+    width: 400px;
+}
+
+.titulomateria{
+    font-family:  'Poppins', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.header3{
+    background-color: #0040744e;
+}
+
+.tituloheader3{
+    font-family:  'Poppins', sans-serif;
+    font-size: 40px;
+    background-color: #20415c;
+    border: 1px solid #20415c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 610px;
+    margin-right: 610px;
+}
+
+.resumomateria{
+    font-family:  'Poppins', sans-serif;
+    font-size: 20px;
+    color:#20415c;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.intromateria{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    color: #20415c;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.botaoheader3{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color: #20415c;
+    border: 2px solid #20415c;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.materia{
+    text-align: center;
+}
+
+.tituloprovas{
+    font-family:  'Poppins', sans-serif;
+    font-size: 40px;
+    background-color: #20415c;
+    border: 1px solid #20415c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 690px;
+    margin-right: 690px;
+}
+
+.introprova{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+}
+
+.provas{
+    text-align: center;
+}
+
+.button1{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color: #20415c;
+    border: 2px solid #20415c;
+    text-decoration: none;
+    margin-left: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+/* APLICAÇÃO ====================================================================================================== */
+
+
+/* ACESSO AO ENSINO SUPERIOR =======================================================================================*/
+
+.programasisu{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5%;
+    display: block;
+}
+
+.titulosisu{
+    font-family:  'Poppins', sans-serif;
+    font-size: 35px;
+    background-color:#eeb909;
+    border: 1px solid #eeb909;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 100px;
+    margin-right: 1390px;
+    text-align: center; 
+}
+
+.botaosisu{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color: #20415c;
+    border: 2px solid #20415c;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 6px;
+
+}
+
+.tituloprouni{
+    font-family:  'Poppins', sans-serif;
+    font-size: 35px;
+    background-color:#eeb909;
+    border: 1px solid #eeb909;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 100px;
+    margin-right: 1390px;
+    text-align: center; 
+}
+
+.botaoprouni{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color: #20415c;
+    border: 2px solid #20415c;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 6px;
+
+}
+
+.titulofies{
+    font-family:  'Poppins', sans-serif;
+    font-size: 35px;
+    background-color:#eeb909;
+    border: 1px solid #eeb909;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 100px;
+    margin-right: 1390px;
+    text-align: center; 
+}
+
+.botaofies{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color: #20415c;
+    border: 2px solid #20415c;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 6px;
+
+}
+
+
+#contato{
+    background-color: rosybrown;
+}
+
+.footer{
+    box-shadow: rgba(1, 1, 1, 0.55) 1.95px 1.95px 5px; 
+    margin: 10px;
+    padding: 10px;    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+/* TESTE DE CARD ========================================================================================*/
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+.header .logo {
+    float: left;
+    padding: 0 20px;
+}
+
+.header .menu nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+/* Estilos para os cartões */
+.card-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.card {
+    background: #fcffd5;
+    border: 2px solid #ffdc7b; 
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 0; 
+}
+
+.card-content {
+    padding: 15px; 
+}
+
+/* Outros estilos para os elementos dentro do cartão */
+
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-title{
+    text-align: center;
+    background-color: #e6af19;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+    border-radius: 20px;
+}
+
+.card-text {
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.card-button {
+    text-align: center;
+    background-color: #ffa600;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* Estilo para o footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer h2, .footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    margin: 10px 0 0;
+}

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    background-color: #191d57fd;
+    width: 100%;
+    padding: 15px;
+}
+
+.titulo{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.botaomateria{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 6px;
+}
+
+.header2{
+    background-color: #323aa7fd;
+    border-radius: 20px;
+}
+
+body{
+    background-image: url('fundosite.jpg');
+    overflow-x: hidden;
+}
+
+.menu-mobile{
+    background-color:#191d5763;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2; 
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#btn-menu{
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: .2s;
+    display: none;
+}
+
+
+.menu-mobile nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 15pt;
+}
+
+.menu-mobile nav a:hover{
+    background-color: #2600ff54;
+}
+
+.button1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.linha{
+width: 30px;
+height: 2px;
+background-color: white;
+display: block;
+margin: 5px auto;
+position: relative;
+transform-origin: center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button.ativar{
+    border: 2px solid red;
+}
+
+button.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(2){
+    width: 0;
+}
+
+
+@media screen and (max-width:1050px) {
+    .header2{
+        display: none;
+    }
+
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(100vh - 70px);
+        z-index: 3;
+    }
+
+    #btn-menu{
+        display: block;
+    }
+
+    .botaoheader3{
+display: block;
+    }
+
+    .tituloheader3{
+        background-color:#ee6509;
+        
+    }
+}
+
+.header3{
+    background-color: #3272a7c4;
+}
+
+.tituloheader3{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    background-color: #ee6509;
+    border: 1px solid #ee6509;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 20px;
+}
+
+.botaoheader3{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color:rgb(231, 103, 29);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.header4{
+    background-color: rgb(252, 252, 252);
+
+}
+
+.titulodestaque{
+    font-family:  'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.grupocard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 -10px; /* Adicionei uma margem negativa para compensar a margem nos botões */
+}
+
+.card {
+   margin: 10px;
+   margin-left: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 250px;
+    height: 175px;
+    background-color: white;
+    transition: .2s linear;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ee6509;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.botaoosmaispopulares{
+background-color: white;
+color: #ee6509;
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+text-decoration: none;
+cursor: pointer;
+width: 350px;
+height: 50px;
+border: 1px solid #666;
+border-radius: 3px;
+margin: 5px;
+margin-left: 70px;
+}
+
+.tituloosmaispopulares{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    transform: translateY(10px) rotate(-2deg);
+    color: white;
+    background-color: #ee6509;
+    width: 700px;
+    height: 65px;
+    border: 1px solid #ee6509;
+    border-radius: 5px;
+}
+
+.cardmateria{
+    margin: 10px;
+    margin-left: 70px;
+     padding: 15px;
+     text-align: center;
+     border: 1px solid gray;
+     border-radius: 5px;
+     width: 781px;
+     height: 120px;
+     background-color: white;
+     transition: .2s linear; 
+}
+
+.cardtitulomateria{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ee6509;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.cardtextomateria{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.linkcardmateria{
+    text-decoration: none;
+}
+
+.headerosmaispopulares{
+    background-color: #3272a7c4;
+}
+
+.headermateriasgerais{
+    background-color: rgb(252, 252, 252);
+}
+
+.botaobarra{
+    text-decoration: none;
+    color: white;
+}
+
+.biologiaimg{
+    width: 240px;
+    height: 240px;
+    margin-left: 1550px;
+    margin-top: -400px;
+    padding-bottom: 12px;
+}
+

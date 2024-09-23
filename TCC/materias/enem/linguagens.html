@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../src/css/materias_enem.css">
+    <script src="https://kit.fontawesome.com/1aee17a27e.js" crossorigin="anonymous"></script>
+    <script src="./../../src/js/slide.js" defer></script>
+    <title>Literatura - Mente Curiosa</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container"></div>
+        <a class="titulo" href="index.html">Mente Curiosa - ENEM <i class="fa-solid fa-book"
+                style="color: #ffffff;"></i></a>
+
+        <button class="button1" onclick="animar()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <div class="menu">
+            <nav>
+                <a href="index.html"><b>Home</b> <i class="fa-solid fa-house"></i></a>
+                <a href="index.html#vestibulares"><b>Vestibulares</b></a>
+                <a href="#contato"><b>Contato</b></i></a>
+            </nav>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <nav>
+                <a href="#"><b>Todas as Matérias </b></a>
+                <a href="#"><b>Exercícios</b> <i class="fa-solid fa-book"></i></a>
+                <a href="#"><b>Vestibulares</b> <i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="#"><b>Contato</b> <i class="fa-solid fa-envelope"></i></a>
+            </nav>
+        </div>
+
+        <script>
+            const menuDiv = document.getElementById('menu-mobile');
+            const btn = document.getElementById('btn-menu');
+
+            menuDiv.addEventListener('click', animar);
+
+            function animar() {
+                menuDiv.classList.toggle('abrir');
+                btn.classList.toggle('ativar');
+            }
+        </script>
+        &nbsp;
+        <header class="header2">
+            <div>
+                <button class="botaomateria"><a href="literatura.html" classSSS="botaobarra"><b>Literatura</b></a></button>
+                <button class="botaomateria"><a href="gramatica.html" class="botaobarra"><b>Gramática</b></a></button>
+                <button class="botaomateria"><a href="ingles.html" class="botaobarra"><b>Inglês</b></a></button>
+                <button class="botaomateria"><a href="espanhol.html" class="botaobarra"><b>Espanhol</b></a></button>
+                <button class="botaomateria"><a href="arte.html" class="botaobarra"><b>Arte</b></a></button>
+        </header>
+    </header>
+
+    <header class="header3">
+        <br>
+        <button class="tituloheader3"><b> Literatura </b></button><br>
+        <br>
+        <button class="botaoheader3"><b>Literatura Portuguesa</b></button>
+        <button class="botaoheader3"><b>Literatura Brasileira</b></button>
+        <br>
+        <br>
+    </header>
+    <header class="header4">
+        <br>
+        <h3 class="titulodestaque">Destaques da Literatura</h3>
+        <br>
+
+        <div class="grupocard">
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Poemas de amor de grandes poetas (com comentários)</h4>
+                </a>
+                <p class="card-text">O amor é o sentimento mais comum entre as pessoas. Por ser um tema..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Melhores livros para ler e manter a mente ligada</h4>
+                </a>
+                <p class="card-text">Para manter a mente ligada e utilizar o tempo livre como forma de..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Gonçalves Dias</h4>
+                </a>
+                <p class="card-text">Gonçalves Dias foi um dos maiores poetas da primeira geração..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Naturalismo no Brasil</h4>
+                </a>
+                <p class="card-text">O Naturalismo no Brasil tem como marco inicial a publicação do..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Parnasianismo no Brasil</h4>
+                </a>
+                <p class="card-text">O Parnasianismo no Brasil teve como marco inicial a publicação da..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Luís de Camões</h4>
+                </a>
+                <p class="card-text">Luís de Camões (1524-1580) foi um poeta e soldado português, considerado..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Metalinguagem</h4>
+                </a>
+                <p class="card-text">A Metalinguagem é a linguagem que descreve sobre ela mesma. Ou seja..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Monteiro Lobato</h4>
+                </a>
+                <p class="card-text">Monteiro Lobato (1882-1948) foi um escritor e editor brasileiro pré-modernista..
+                </p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Manuel Bandeira</h4>
+                </a>
+                <p class="card-text">Manuel Bandeira foi um escritor brasileiro, além de professor..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Carlos Drummond de Andrade</h4>
+                </a>
+                <p class="card-text">Carlos Drummond de Andrade foi poeta, contista..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Olavo Bilac</h4>
+                </a>
+                <p class="card-text">Olavo Bilac (1865-1918) foi um autêntico poeta brasileiro. Considerado..</p>
+            </button>
+
+            <button class="card">
+                <a href="#" class="card-title">
+                    <h4>Jorge Amado</h4>
+                </a>
+                <p class="card-text">Jorge Amado foi jornalista e um dos maiores representantes da..</p>
+            </button>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="headerosmaispopulares">
+        <h3 class="tituloosmaispopulares">Os mais populares da Literatura</h3>
+        <br>
+        <br>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Características do Realismo</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Poema</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Futurismo</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Exercícios sobre Trovadorismo</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>O Quinze</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Características do Modernismo</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Gêneros Literários</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>O que é Literatura?</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Vida e Obra de Clarice Lispector</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Morte e vida de severina</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Realismo</h4>
+            </a>
+        </button>
+
+        <button class="botaoosmaispopulares">
+            <a href="#" class="card-title">
+                <h4>Características do Barroco</h4>
+            </a>
+        </button><br>
+        <br>
+    </div>
+    <header class="headermateriasgerais">
+        <br><br>
+
+
+        <div>
+            <div class="cardmateria">
+                <a href="adivinha-literatura.html" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Adivinhas</h5>
+                </a>
+                <p class="cardtextomateria">As adivinhas ou adivinhações começam tradicionalmente com a pergunta "o que
+                    é, o que é...?".Em sua estrutura é feita uma..</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="cardmateria">
+                <a href="#" class="linkcardmateria">
+                    <h5 class="cardtitulomateria">Título especial</h5>
+                </a>
+                <p class="cardtextomateria">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                    adicional.</p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

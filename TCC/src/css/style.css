@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300&family=Titillium+Web:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #191d57fd;
+    width: 100%;
+    padding: 15px;
+}
+
+.logo{
+   width: 25%; 
+   color:white;
+   font-size: 20px;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+.sociais{
+    width: 25%;
+    color: white;
+}
+
+.menu{
+    width: 50%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration:none;
+    padding-right: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, white, #b7fdff);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+    border-radius: 4px;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+/* Estilização do menu mobile */
+
+.menu-mobile{
+    background-color:#191d5763;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2; /* para que o menu mobile esteja acima do slide */
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#btn-menu{
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: .2s;
+    display: none;
+}
+
+
+.menu-mobile nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 15pt;
+}
+
+.menu-mobile nav a:hover{
+    background-color: #2600ff54;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.linha{
+width: 30px;
+height: 2px;
+background-color: white;
+display: block;
+margin: 5px auto;
+position: relative;
+transform-origin: center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button.ativar{
+    border: 2px solid red;
+}
+
+button.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(2){
+    width: 0;
+}
+
+
+@media screen and (max-width:1050px) {
+    .menu {
+        display:none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(100vh - 70px);
+        z-index: 3;
+    }
+
+    #btn-menu{
+        display: block;
+    }
+}
+
+.sociais button i{
+    font-size: 20px;
+    color: white;
+}
+
+
+/* SEÇÃO DE SLIDE*/
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+    left: 0;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+    z-index: 2;
+}
+
+.slide-box img{
+    width: 100%;
+    z-index: 3;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 33.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid  #191d57fd;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color:  #191d57fd;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #191d57fd;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color:  #191d57fd;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+  background-color:  #191d57fd;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display:block ;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+
+/* SEÇÃO DO TEXTO*/
+
+.botoes{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.titulo{
+    text-align: center;
+    font-family:'Titillium Web', sans-serif;
+    font-size: 50px;
+}
+
+.resumo{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #000000;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.button1{
+    background-color: transparent;
+    height: 100px;
+    width: 300px;
+    margin-left: 120px;
+    color: #191d57fd;
+    border:transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    justify-content: center;
+    font-family:'Titillium Web', sans-serif;
+    text-align: center ;
+
+}
+
+body{
+    background-image: url('fundosite.jpg');
+}
+
+
+.contato{
+    background-color: black;
+}
+
+.footer{
+    box-shadow: rgba(1, 1, 1, 0.55) 1.95px 1.95px 5px; 
+    margin: 10px;
+    padding: 10px;    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}

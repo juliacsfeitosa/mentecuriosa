@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300&family=Titillium+Web:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #191d57fd;
+    width: 100%;
+    padding: 15px;
+}
+
+.header2{
+    background-color: #323aa7fd;
+    border-radius: 20px;
+}
+
+.logo{
+   width: 25%; 
+   color:white;
+   font-size: 20px;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+.sociais{
+    width: 25%;
+    color: white;
+}
+
+.menu{
+    width: 50%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration:none;
+    padding-right: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, white, #b7fdff);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+    border-radius: 4px;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.footer{
+    box-shadow: rgba(1, 1, 1, 0.55) 1.95px 1.95px 5px; 
+    margin: 10px;
+    padding: 10px;    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}   
+
+.header3{
+    background-color: #3272a7c4;
+}
+
+.tituloheader3{
+    font-family:  'Poppins', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    background-color: #ee6509;
+    border: 1px solid #ee6509;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(10px) rotate(-2deg);
+    margin-left: 20px;
+    padding: 4px;
+}
+
+.botaoheader3{
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
+    background-color: white;
+    color:rgb(231, 103, 29);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.header4{
+    background-color: rgb(252, 252, 252);
+
+}
+
+.titulodestaque{
+    font-family:  'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.grupocard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 -10px; /* Adicionei uma margem negativa para compensar a margem nos botões */
+}
+
+.card {
+   margin: 10px;
+   margin-left: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 250px;
+    height: 175px;
+    background-color: white;
+    transition: .2s linear;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ee6509;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.botaoosmaispopulares{
+    background-color: white;
+    color: #ee6509;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #666;
+    border-radius: 3px;
+    margin: 5px;
+    margin-left: 70px;
+    }
+    
+    .tituloosmaispopulares{
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        transform: translateY(10px) rotate(-2deg);
+        color: white;
+        background-color: #ee6509;
+        width: 700px;
+        height: 65px;
+        border: 1px solid #ee6509;
+        border-radius: 5px;
+    }
+
+    .headerosmaispopulares{
+        background-color: #3272a7c4;
+        padding: 30px;
+    }
